@@ -25,14 +25,10 @@ import "./styles.css";
  */
 const siteProps = {
   name: "Alexandrie Grenier",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
-  medium: "",
-  twitter: "microsoft",
-  youTube: "Code",
+  title: "Undergrad Student",
+  email: "drishtisingh@gmail.com",
+  gitHub: "https://github.com/ds-09",
+  linkedIn: "https://www.linkedin.com/in/drishti-singh-bb9bb0223/",
 };
 
 const primaryColor = "#4E567E";
