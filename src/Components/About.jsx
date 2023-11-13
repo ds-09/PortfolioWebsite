@@ -16,7 +16,12 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import gitIcon from "../images/git.png";
+import gitHubIcon from "../images/github-2.png";
+import pythonIcon from "../images/python.png";
+import cppIcon from "../images/c-plus-plus.png";
+import javaIcon from "../images/java.png";
+import vscIcon from "../images/visual-studio-code.png";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -30,13 +35,7 @@ const description =
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = [
-  "python","C++","java","HTML","CSS","JavaScript","SQL","git",
-  "visual-studio-code",
-  "Figma","github-2",
-  "Backend development",
-  "Graphic design"
-];
+//"HTML","CSS","JavaScript","SQL","Backend development","Graphic design"
 
 const skillDesc = "I am familiar with the following languages and tools:" 
 /**
@@ -49,7 +48,6 @@ const skillDesc = "I am familiar with the following languages and tools:"
 const About = () => {
   return (
     <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
           backgroundColor: "white",
@@ -71,11 +69,15 @@ const About = () => {
             flexWrap: "wrap",
           }}
         >
-          {skillsList.map((skill) => (
-            <img key={skill} className="logo" src={require(`../images/${skill}.png`).default} alt={skill} />
-          ))}
+          <img className="logo" src={pythonIcon} alt={imageAltText}/>
+          <img className="logo" src={cppIcon} alt={imageAltText}/>
+          <img className="logo" src={javaIcon} alt={imageAltText}/>
+          <img className="logo" src={gitIcon} alt={imageAltText}/>
+          <img className="logo" src={gitHubIcon} alt={imageAltText}/>
+          <img className="logo" src={vscIcon} alt={imageAltText}/>
+          
         </div>
-        <hr />
+        <hr/>
       </div>
     </section>
   );

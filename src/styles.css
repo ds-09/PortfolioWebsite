@@ -26,7 +26,7 @@ section {
 }
 
 section.min-height {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 section.padding {
@@ -46,15 +46,16 @@ section img.background {
 }
 
 h1 {
+  align-items: center;
   font-family: "Cormorant Garamond", serif;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 0.8;
   margin: 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
@@ -66,9 +67,9 @@ h3 {
   margin: 0;
 }
 
-.logo {
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
+img.logo {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
   margin: 10px; /* Adjust the spacing as needed */
 }
 
@@ -129,4 +130,15 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 5rem;
+  width: 100vw;
 }
