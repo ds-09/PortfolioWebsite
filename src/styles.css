@@ -20,6 +20,9 @@ div#main {
   width: 100vw;
 }
 
+div#footer{
+  background-color: #4e567e;
+}
 section {
   position: relative;
   width: 100vw;
@@ -28,6 +31,7 @@ section {
 
 section.padding {
   background-color: white;
+  height: 100vw;
 }
 
 section img.background {
@@ -65,9 +69,9 @@ h3 {
 }
 
 img.logo {
-  width: 100px; /* Adjust the size as needed */
+  width: 100px; 
   height: 100px;
-  margin: 10px; /* Adjust the spacing as needed */
+  margin: 10px; 
 }
 
 p {
@@ -144,5 +148,5 @@ img.socialIcon {
 
 section.min-height {
   min-height: 80vh;
-  background-color: black;
+  background-color: #4e567e;
 }

@@ -19,9 +19,17 @@ import React from "react";
 import gitIcon from "../images/git.png";
 import gitHubIcon from "../images/github-2.png";
 import pythonIcon from "../images/python.png";
-import cppIcon from "../images/c-plus-plus.png";
 import javaIcon from "../images/java.png";
 import vscIcon from "../images/visual-studio-code.png";
+import cppIcon from "../images/s.png";
+import canvaIcon from "../images/canva.png";
+import figmaIcon from "../images/figma.png";
+import htmlIcon from "../images/html.png";
+import cssIcon from "../images/css.png";
+import jsIcon from "../images/javascript.png";
+import sqlIcon from "../images/mysql.png";
+import dockerIcon from "../images/docker.png";
+
 
 const imageAltText = "purple and blue abstract background";
 
@@ -70,14 +78,29 @@ const About = () => {
             justifyContent: "center",
             alignItems: "center",
             flexWrap: "wrap",
+            width:"80%",
+            margin: "auto"
           }}
         >
           <img className="logo" src={pythonIcon} alt={imageAltText}/>
           <img className="logo" src={cppIcon} alt={imageAltText}/>
           <img className="logo" src={javaIcon} alt={imageAltText}/>
+          
+         
+          <img className="logo" src={htmlIcon} alt={imageAltText}/>
+          <img className="logo" src={cssIcon} alt={imageAltText}/>
+          <img className="logo" src={jsIcon} alt={imageAltText}/>
+          <img className="logo" src={sqlIcon} alt={imageAltText}/>
+
           <img className="logo" src={gitIcon} alt={imageAltText}/>
           <img className="logo" src={gitHubIcon} alt={imageAltText}/>
           <img className="logo" src={vscIcon} alt={imageAltText}/>
+
+          <img className="logo" src={dockerIcon} alt={imageAltText}/>
+          <img className="logo" src={canvaIcon} alt={imageAltText}/>
+          <img className="logo" src={figmaIcon} alt={imageAltText}/>
+          
+
           
         </div>
         <hr/>

@@ -19,13 +19,13 @@ import linkedInIcon from "../images/socials/linkedin.svg";
  *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
  *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
  */
-
+const n="Drishti Singh";
 const Footer = (props) => {
   const {
     email,
     gitHub,
     linkedIn,
-    name,
+    n,
     primaryColor,
    } = props;
 
@@ -70,28 +70,23 @@ const Footer = (props) => {
         )}
       </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
+        Created by {n}
       </p>
     </div>
   );
 };
 
+
 Footer.defaultProps = {
-  name: "",
+  name: {n},
 };
 
 Footer.propTypes = {
-  devDotTo: PropTypes.string,
   email: PropTypes.string,
   gitHub: PropTypes.string,
-  instagram: PropTypes.string,
   linkedIn: PropTypes.string,
-  medium: PropTypes.string,
   name: PropTypes.string.isRequired,
-  primaryColor: PropTypes.string,
-  twitter: PropTypes.string,
-  youTube: PropTypes.string,
-
+  primaryColor: PropTypes.string
 };
 
 export default Footer;

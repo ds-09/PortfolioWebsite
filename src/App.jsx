@@ -29,6 +29,7 @@ const siteProps = {
   email: "drishtisingh0925@gmail.com",
   gitHub: "ds-09",
   linkedIn: "/in/drishti-singh-bb9bb0223/",
+  n:"Drishti Singh"
 };
 
 const primaryColor = "#4E567E";
