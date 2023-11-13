@@ -24,28 +24,27 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a third year student pursuing BTech in Computer Science and Engineering at Manipal University.I am passionate about solving problems in new creative ways to drive innovation. I seek opportunities to expand my skillset and .";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "python","C++","java","HTML","CSS","JavaScript","SQL","git",
+  "visual-studio-code",
+  "Figma","github-2",
+  "Backend development",
+  "Graphic design"
 ];
 
+const skillDesc = "I am familiar with the following languages and tools:" 
 /**
  * Use this to give more information about what you are passionate about,
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
  */
-const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+
 
 const About = () => {
   return (
@@ -60,24 +59,23 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
+        <h2>About Me</h2>
         <p className="large">{description}</p>
         <hr />
-        <ul
+        <p className="large">{skillDesc}</p>
+        <div
           style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexWrap: "wrap",
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <img key={skill} className="logo" src={require(`../images/${skill}.png`).default} alt={skill} />
           ))}
-        </ul>
+        </div>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
