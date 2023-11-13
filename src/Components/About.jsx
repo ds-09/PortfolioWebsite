@@ -29,7 +29,9 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a third year student pursuing BTech in Computer Science and Engineering at Manipal University.I am passionate about solving problems in new creative ways to drive innovation. I seek opportunities to expand my skillset and .";
+  "I'm a third year student pursuing BTech in Computer Science at Manipal University."
+
+const desc="I am passionate about solving problems in new creative ways to drive innovation. I am a quick learner and a team player. I am always looking for opportunities to learn and grow.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
@@ -59,6 +61,7 @@ const About = () => {
       >
         <h2>About Me</h2>
         <p className="large">{description}</p>
+        <p className="large">{desc}</p>
         <hr />
         <p className="large">{skillDesc}</p>
         <div
