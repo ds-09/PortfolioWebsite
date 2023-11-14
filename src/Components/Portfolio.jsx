@@ -20,8 +20,6 @@ import React from "react";
  * freely use on your site.
  */
 
-const imageAltText = "imgText";
-
 /**
  * Project list
  *
@@ -30,48 +28,64 @@ const imageAltText = "imgText";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Client Management System",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "An interactive desktop application for efficient client management. Allows administrators to add, view, update, print and delete client records through a user-friendly interface.",
+    url: "https://github.com/ds-09/Client-Management-System",
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "Hues",
+    description:"A visually engaging artwork sales platform incorporating frontend design elements. Also features a basic backend functionality for user authentication.",
+    url: "https://github.com/ds-09/HUES-Website",
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    title: "Minesweeper",
+    description: "A replica of the classic game Minesweeper featuring an interactive GUI.",
+    url: "https://github.com/ds-09/Minesweeper",
   },
   {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "Portfolio Site",
+    description:"My portfolio website showcasing my diverse skill set and projects",
+    url: "https://github.com/ds-09/PortfolioWebsite",
   },
+  
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
-              <p className="small">{project.description}</p>
-            </div>
-          ))}
+    <section className="padding">
+      <div id="portfolio">
+        <h2 style={{ textAlign: "center", paddingTop: "5rem"}}>Projects</h2>
+        <div style={{ display: "flex", flexDirection: "row", padding: "1.5rem" }}>
+
+          <div className="container">
+            {projectList.map((project) => (
+              <div className="box" key={project.title}>
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                </a>
+                <p className="small">{project.description}</p>
+              </div>
+            ))}
+          </div>
+          
+        </div>
+      </div>
+      <div id="research">
+        <h2 style={{ textAlign: "center", paddingTop: "5rem" }}>Research Work</h2>
+        <div>
+          <div className="Rcontainer">
+              <div className="Rbox">
+                <a href="https://drive.google.com/file/d/1v7UrVAqtZf3MezOQYetKQzMOpQmI0iI3/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <h7 >Sentiment Analysis of Book Reviews: A Transfer Learning Approach</h7>
+                </a>
+              </div>
+          </div>
+          
         </div>
       </div>
     </section>
+    
   );
 };
 

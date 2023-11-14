@@ -57,17 +57,17 @@ const skillDesc = "I am familiar with the following languages and tools:"
 
 const About = () => {
   return (
-    <section className="padding" id="about">
+    <section className="Apadding" id="about">
       <div
         style={{
           backgroundColor: "white",
           width: "50%",
-          padding: "4rem",
+          padding: "2rem 4rem",
           margin: "3rem auto",
           textAlign: "center",
         }}
       >
-        <h2>About Me</h2>
+        <h2 style={{ color: "black" }} >About Me</h2>
         <p className="large">{description}</p>
         <p className="large">{desc}</p>
         <hr />
@@ -79,7 +79,8 @@ const About = () => {
             alignItems: "center",
             flexWrap: "wrap",
             width:"80%",
-            margin: "auto"
+            margin: "auto",
+            paddingTop:"1.5rem"
           }}
         >
           <img className="logo" src={pythonIcon} alt={imageAltText}/>
@@ -99,11 +100,7 @@ const About = () => {
           <img className="logo" src={dockerIcon} alt={imageAltText}/>
           <img className="logo" src={canvaIcon} alt={imageAltText}/>
           <img className="logo" src={figmaIcon} alt={imageAltText}/>
-          
-
-          
         </div>
-        <hr/>
       </div>
     </section>
   );
