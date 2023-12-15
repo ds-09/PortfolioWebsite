@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Welcome to the repository for my personal portfolio website. This website showcases my skills, projects, and experience as a [Your Profession/Title]. Feel free to explore the code, and if you have any suggestions or feedback, I'd love to hear from you!
+Welcome to the repository for my personal portfolio website. This website showcases my skills, projects, and experience as a Computer Science Student. Feel free to explore the code, and if you have any suggestions or feedback, I'd love to hear from you!
 
 ## Table of Contents
 - [Demo](#demo)
