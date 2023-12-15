@@ -10,22 +10,6 @@
 
 import React from "react";
 
-/**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */
-
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */
 const projectList = [
   {
     title: "Client Management System",
@@ -54,6 +38,7 @@ const projectList = [
 const Portfolio = () => {
   return (
     <section className="padding">
+    
       <div id="portfolio">
         <h2 style={{ textAlign: "center", paddingTop: "5rem"}}>Projects</h2>
         <div style={{ display: "flex", flexDirection: "row", padding: "1.5rem" }}>

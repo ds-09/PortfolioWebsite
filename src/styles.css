@@ -28,15 +28,15 @@ section {
   width: 100vw;
 }
 
-
+/*about section*/
 section.Apadding {
-  height: 65vw;
+  height: auto;
   background-color: white;
+  padding: 3rem 0;
 }
 
 section.padding {
-  height: 90vw;
-  /* add a gradient background with multiple colors */
+  height: auto;
   
 
 }
@@ -45,19 +45,20 @@ section.padding h2{
 }
 section#portfolio {
   background-color: #4e567e;
-  height: 100vw;
+  height: auto; /* Change to auto height for dynamic content */
+  padding: 3rem 0;
 }
 section#research {
   background-color: white;
-  height: 60vw;
+  height: auto; /* Change to auto height for dynamic content */
+  padding: 3rem 0;
 }
-
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 20px auto;
-  padding: auto;
+  padding: 0 20px; /* Adjust padding as needed */
 }
 
 .container .box {
@@ -67,14 +68,14 @@ section#research {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  padding: 24px 20px;
+  padding: 24px;
   background-color: white;
 }
 
 .Rcontainer {
   justify-content: center;
   display: grid;
-  grid-template-columns: 700px ;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 20px auto;
   padding: 1.5rem;
 }
@@ -83,9 +84,12 @@ section#research {
   border-radius: 10px;
   border: 1px solid #4e567e;
   display: flex;
-  padding: 34px 40px;
+  padding: 34px;
   text-align: center;
+  width: 70%;
+  justify-content: center;
   background-color: white;
+  margin: 0 auto;
 }
 
 section img.background {
@@ -185,12 +189,25 @@ img.socialIcon {
   flex-direction:column;
   align-items: center;
   align-content: center;
-  position: absolute;
   height: 40vw;
   width: 100vw;
+  margin-top: 80px;
 }
 
+@media only screen and (max-width: 600px) {
+  .centered-container {
+    margin-top: 100px; /* Adjust the margin for smaller screens */
+    height: 60vw;
+  }
+}
+
+.centered-container h1 h2{
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 0.8;
+  margin: 0;
+}
 section.min-height {
-  min-height: 80vh;
+  min-height: 40%; /* Adjust the value as needed */ 
   background-color: #4e567e;
 }

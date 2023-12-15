@@ -41,18 +41,7 @@ const description =
 
 const desc="I am passionate about solving problems in new creative ways to drive innovation. I am a quick learner and a team player. I am always looking for opportunities to learn and grow.";
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
-//"HTML","CSS","JavaScript","SQL","Backend development","Graphic design"
-
 const skillDesc = "I am familiar with the following languages and tools:" 
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
 
 
 const About = () => {
