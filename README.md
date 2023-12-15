@@ -7,7 +7,6 @@ Welcome to the repository for my personal portfolio website. This website showca
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Use this template](#use-this-template)
-- [Usage](#usage)
 
 
 ## Demo
@@ -30,15 +29,8 @@ Welcome to the repository for my personal portfolio website. This website showca
 ## Use this template
 
 1. Clone this repository: `https://github.com/ds-09/PortfolioWebsite`
-2. After navigating to the newlycreated repo, create codespace on main.
-3. Execute
-   ```bash npm install
+2. After navigating to the newly created repo, create codespace on main.
+3. Execute `npm install` in the terminal and codespaces will execute `npm start` to start the web application.
 5. Customize your portfolio.
 
-## Usage
-
-Customize the content:
-- Update `index.html` with your information.
-- Replace `/images` with your images.
-- Modify styles in `/css` to match your preferences.
 
