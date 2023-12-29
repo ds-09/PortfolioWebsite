@@ -14,12 +14,12 @@ const projectList = [
   {
     title: "Client Management System",
     description:
-      "An interactive desktop application for efficient client management. Allows administrators to add, view, update, print and delete client records through a user-friendly interface.",
+      "An interactive desktop application for efficient client management. Allows admins to add, view, update, print and delete client records.",
     url: "https://github.com/ds-09/Client-Management-System",
   },
   {
     title: "Hues",
-    description:"A visually engaging artwork sales platform incorporating frontend design elements. Also features a basic backend functionality for user authentication.",
+    description: "A visually engaging artwork sales platform incorporating frontend design elements. Also features a basic backend functionality for user authentication.",
     url: "https://github.com/ds-09/HUES-Website",
   },
   {
@@ -32,6 +32,12 @@ const projectList = [
     description:"My portfolio website showcasing my diverse skill set and projects",
     url: "https://github.com/ds-09/PortfolioWebsite",
   },
+  {
+    title: "BlogPost",
+    description:"An interactive website to post blogs. It features creation of new blogs, editing and deleting existing blogs.",
+    url: "https://github.com/ds-09/BlogPost",
+  }
+
   
 ];
 

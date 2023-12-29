@@ -33,9 +33,6 @@ import dockerIcon from "../images/docker.png";
 
 const imageAltText = "purple and blue abstract background";
 
-/**
- * Sort description that expands on your title on the Home component.
- */
 const description =
   "I'm a third year student pursuing BTech in Computer Science at Manipal University."
 
