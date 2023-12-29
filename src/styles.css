@@ -30,9 +30,12 @@ section {
 
 /*about section*/
 section.Apadding {
-  height: auto;
   background-color: white;
-  padding: 3rem 0;
+  width: 80%;
+  padding: 2rem 4rem;
+  margin: 3rem auto;
+  text-align: center;
+  height: auto;
 }
 
 section.padding {
@@ -134,11 +137,22 @@ h6{
   margin: 0;
 }
 
-img.logo {
-  width: 100px; 
-  height: 100px;
-  margin: 10px; 
+
+/* Logos */
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+img.logo {
+  width: 100px;
+  max-width: 100px;
+  margin: 10px;
+}
+
+
 
 p {
   font-size: 14px;
@@ -197,8 +211,13 @@ img.socialIcon {
 
 @media only screen and (max-width: 600px) {
   .centered-container {
-    margin-top: 100px; /* Adjust the margin for smaller screens */
+    margin-top: 100px; 
     height: 60vw;
+  }
+  img.logo {
+    width: 60px;
+    max-width: 60px;
+    margin: 10px;
   }
 }
 

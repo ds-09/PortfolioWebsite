@@ -1,21 +1,4 @@
-/**
- * About component
- *
- * Space for you to describe more about yourself.
- */
-
 import React from "react";
-
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
 import gitIcon from "../images/git.png";
 import gitHubIcon from "../images/github-2.png";
 import pythonIcon from "../images/python.png";
@@ -58,7 +41,8 @@ const About = () => {
         <p className="large">{desc}</p>
         <hr />
         <p className="large">{skillDesc}</p>
-        <div
+
+        <div className="image-container"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -86,6 +70,7 @@ const About = () => {
           <img className="logo" src={dockerIcon} alt={imageAltText}/>
           <img className="logo" src={canvaIcon} alt={imageAltText}/>
           <img className="logo" src={figmaIcon} alt={imageAltText}/>
+
         </div>
       </div>
     </section>
