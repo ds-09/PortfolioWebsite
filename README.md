@@ -11,7 +11,7 @@ Welcome to the repository for my personal portfolio website. This website showca
 
 ## Demo
 
-[Visit my portfolio here](https://blue-coast-089889f00.4.azurestaticapps.net/)
+[Visit my portfolio here]([https://blue-coast-089889f00.4.azurestaticapps.net/](https://drishtisingh.netlify.app/))
 
 ## Features
 
