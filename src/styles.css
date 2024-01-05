@@ -31,18 +31,11 @@ section {
 /*about section*/
 section.Apadding {
   background-color: white;
-  width: 80%;
-  padding: 2rem 4rem;
+  width: 70%;
   margin: 3rem auto;
-  text-align: center;
   height: auto;
 }
 
-section.padding {
-  height: auto;
-  
-
-}
 section.padding h2{
   color: black;
 }
@@ -61,8 +54,8 @@ section#research {
   justify-content: center;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 20px auto;
-  padding: 0 5rem; /* Adjust padding as needed */
+  margin: 1rem auto;
+  padding: 6rem;
 }
 
 .container .box {
@@ -72,7 +65,7 @@ section#research {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  padding: 24px;
+  padding: 1.5rem;
   background-color: white;
 }
 
@@ -96,17 +89,7 @@ section#research {
   margin: 0 auto;
 }
 
-section img.background {
-  height: 100%;
-  left: 50%;
-  object-fit: cover;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, 0);
-  width: 100vmax;
-  z-index: -1;
-}
+
 
 h1 {
   align-items: center;
@@ -118,17 +101,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
 }
 
-
-
 h3 {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 0;
 }
 h6{
@@ -137,17 +118,21 @@ h6{
   margin: 0;
 }
 
-
+h7{
+  font-size: 0.9rem;
+}
 /* Logos */
 
-.img-container {
-  display: flex;
+#image-container{
+  padding-top: 1rem;
+  margin: auto;
+  width: 50%;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 img.logo {
-  width: 100px;
+  width: 90px;
   max-width: 100px;
   margin: 10px;
 }
@@ -155,7 +140,7 @@ img.logo {
 
 
 p {
-  font-size: 14px;
+  font-size: 5rem;
   align-content: flex-start;
   line-height: 1.5;
   margin-bottom: 0;
@@ -163,11 +148,11 @@ p {
 }
 
 p.large {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 p.small {
-  font-size: 18px;
+  font-size: 0.8rem;
 }
 
 hr {
@@ -209,17 +194,6 @@ img.socialIcon {
   margin-top: 80px;
 }
 
-@media only screen and (max-width: 600px) {
-  .centered-container {
-    margin-top: 100px; 
-    height: 60vw;
-  }
-  img.logo {
-    width: 60px;
-    max-width: 60px;
-    margin: 10px;
-  }
-}
 
 .centered-container h1 h2{
   font-size: 3.5rem;
@@ -227,6 +201,99 @@ img.socialIcon {
   line-height: 0.8;
   margin: 0;
 }
+
+@media only screen and (max-width: 800px) {
+
+
+  h1 {
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0.8;
+    padding-left: auto;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: auto;
+    align-content: flex-start;
+    
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  h7 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  p.large{
+    font-size: 0.8rem;
+  }
+
+  p.small{
+    font-size: 0.6rem;
+  }
+  /* HOME  */
+  .centered-container {
+    color: white;
+    display: flex; 
+    flex-direction: column;  
+    align-items: flex-start; 
+    justify-content: center;
+    height: 60vw;
+    width: 90vw;
+    margin-top: 100px;
+    padding-left: 2rem;
+  }
+
+  section.min-height h1 {
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 0.8;
+    padding-left: auto;
+  }
+  
+  section.min-height h2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-left: auto;
+    align-content: flex-start;
+    
+  }
+
+  .centered-container h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 0.8;
+    margin: 0;
+  }
+
+  section.Apadding {
+    background-color: white;
+    width: 80%;
+    margin: 2rem auto;
+    height: auto;
+  }
+
+  img.logo {
+    width: 70px;
+    max-width: 100px;
+    margin: 0.5rem;
+  }
+
+
+
+  
+}
+
 section.min-height {
   min-height: 40%; /* Adjust the value as needed */ 
   background-color: #4e567e;

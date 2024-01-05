@@ -7,10 +7,9 @@ const Header = () => {
         position: "fixed",
         display: "flex",
         justifyContent: "center",
-        gap: "2rem",
+        gap: "1.2rem",
         background: "rgba(255,255,255,0.75)",
-        padding: "1rem",
-        top: 0,
+        padding: "0.8rem",
         width: "100%",
         zIndex: 10,
       }}

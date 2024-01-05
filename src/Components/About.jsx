@@ -12,6 +12,8 @@ import cssIcon from "../images/css.png";
 import jsIcon from "../images/javascript.png";
 import sqlIcon from "../images/mysql.png";
 import dockerIcon from "../images/docker.png";
+import reactIcon from "../images/react.png";
+import bootstrapIcon from "../images/bootstrap.png";
 
 
 const imageAltText = "purple and blue abstract background";
@@ -30,8 +32,6 @@ const About = () => {
       <div
         style={{
           backgroundColor: "white",
-          width: "50%",
-          padding: "2rem 4rem",
           margin: "3rem auto",
           textAlign: "center",
         }}
@@ -42,25 +42,17 @@ const About = () => {
         <hr />
         <p className="large">{skillDesc}</p>
 
-        <div className="image-container"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexWrap: "wrap",
-            width:"80%",
-            margin: "auto",
-            paddingTop:"1.5rem"
-          }}
-        >
+        <div id="image-container">
           <img className="logo" src={pythonIcon} alt={imageAltText}/>
           <img className="logo" src={cppIcon} alt={imageAltText}/>
           <img className="logo" src={javaIcon} alt={imageAltText}/>
           
-         
           <img className="logo" src={htmlIcon} alt={imageAltText}/>
           <img className="logo" src={cssIcon} alt={imageAltText}/>
+          <img className="logo" src={bootstrapIcon} alt={imageAltText}/>
           <img className="logo" src={jsIcon} alt={imageAltText}/>
+          <img className="logo" src={reactIcon} alt={imageAltText}/>
+
           <img className="logo" src={sqlIcon} alt={imageAltText}/>
 
           <img className="logo" src={gitIcon} alt={imageAltText}/>
